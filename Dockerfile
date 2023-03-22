@@ -1,7 +1,4 @@
-FROM kkbalajius/apache2
-RUN apt-get update
-RUN apt-get -y install apache2
-RUN apt-get clean
+FROM webdevops/php-apache
 ADD ./images /var/www/html/images
 COPY . /var/www/html/
 ENTRYPOINT apachectl -D FOREGROUND
