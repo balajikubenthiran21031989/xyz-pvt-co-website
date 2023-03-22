@@ -1,4 +1,4 @@
-FROM kkbalajius/apache2
+FROM kkbalajius/k8s-case-study
 RUN apt-get update
 RUN apt-get -y install apache2
 RUN apt-get clean
